@@ -1,0 +1,39 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+.header-menu{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+}
+.header-menu>li:hover{
+    cursor: pointer;
+    color:var(--orange) ;
+    cursor: pointer;
+}
+
+@media screen  and (max-width: 768px){
+    .header>:nth-child(2){
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+    .header-menu{
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+    }
+    .logo{
+        width: 5rem;
+        height: 5rem;
+        margin-left: -20;
+        border-radius: 50%;
+    }
+}
